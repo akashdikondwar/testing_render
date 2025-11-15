@@ -21,6 +21,7 @@ const dbConfig = {
     password: process.env.DB_PASSWORD || 'pass@123', 
     // <-- CRITICAL: Replace with your actual database name (e.g., 'taskmanager')
     database: process.env.DB_DATABASE || 'medlink', 
+    port : process.env.DB_PORT || 3306,
     waitForConnections: true,
     connectionLimit: 10, // Max number of simultaneous connections
     queueLimit: 0
